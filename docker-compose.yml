@@ -8,7 +8,7 @@ services:
     ipcalc:
         build: .
         expose:
-            - "80"
+            - "8080"
         volumes:
              - ./app:/var/www/html
         networks:
@@ -20,6 +20,6 @@ services:
         depends_on:
         - ipcalc
         ports:
-        - "80:8000"
+        - "8000:80"
         networks:
             - xarxa_gp1f4a11
